@@ -1,5 +1,94 @@
-import base64
+import sys,time,os,pyfiglet
 
-script =" aW1wb3J0IHN5cyx0aW1lLG9zLHB5ZmlnbGV0CgojUm9qbwpSID0gJ1wwMzNbMTszMW0nCkdSID0gJ1wwOzM3WzE7MzcnCiNWZXJkZQpWID0gJ1wwMzNbMTszMm0nCkdLPSdcMDMzWzkybScKCiNPc2N1cm8gVmVyZGUKUyA9ICdcMDMzWzkybScKCiNBbWFyaWxsbwpBID0gJ1wwMzNbMTszM20nCgojQXp1bApaID0gJ1wwMzNbMDszNG0nCgojTW9yYWRvCk0gPSAnXDAzM1sxOzM1bScKCiNDZWxlc3RlCkMgPSAnXDAzM1sxOzM2bScKCiNCbGFuY28KQiA9ICdcMDMzWzM3O20nCgojTmVncm8KRyA9ICdcMDMzWzA7MzAnCgojUmVpbmljaWFyCkUgPSAnXDAzM1swbScKbXVybyA9IE0rIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0iK0UKcHJpbnQgKG11cm8pCnByaW50IChWKQpiYW5uZXIgPSBweWZpZ2xldC5maWdsZXRfZm9ybWF0KCJGbGVldCBYUCIpIApwcmludChiYW5uZXIrRSkgCnByaW50IChBKyJDcmVhZG9yIDoiLCBSKyIgUElSQVRFIEZPVU5ERVIiLEMrIihUb3AgOCkiK0UpCnByaW50IChtdXJvKQpkZWYgbnVtYmVycG9zdCh2YWxvcik6CiAgICB0cnk6CiAgICAgICAgdmFsb3IgPSBpbnQodmFsb3IpCiAgICAgICAgaWYgdmFsb3IgPiAwOgogICAgICAgICAgICByZXR1cm4gdmFsb3IKICAgICAgICBtaCA9IFIrIk5vIHNlIHBlcm1pdGVuIG7Dum1lcm9zIG5lZ2F0aXZvcyBwdXRvICIrRQogICAgICAgIGZvciBrIGluIG1oOgogICAgICAgIAlzeXMuc3Rkb3V0LmZsdXNoKCkKICAgICAgICAJcHJpbnQgKGssZW5kPSIiKQogICAgICAgIAl0aW1lLnNsZWVwKDAuMSkKICAgICAgICB0aW1lLnNsZWVwKDEpCiAgICAgICAgcmV0dXJuIEZhbHNlCiAgICBleGNlcHQ6CiAgICAgICAgbWsgPSBSKyJcblBvcnF1ZSBtaWVyZGEgcG9uZXMge0xFVFJBU30gZmVvIGRlIG1pZXJkYSBcbiIrRQogICAgICAgIGZvciBrIGluIG1rOgogICAgICAgIAlzeXMuc3Rkb3V0LmZsdXNoKCkKICAgICAgICAJcHJpbnQgKGssZW5kPSIiKQogICAgICAgIAl0aW1lLnNsZWVwKDAuMSkKICAgICAgICB0aW1lLnNsZWVwKDEpCiAgICAgICAgcmV0dXJuIEZhbHNlCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwpkZWYga3JhbShwcmVndW50YSk6CiAgICByZXNwdWVzdGEgPSBGYWxzZQogICAgd2hpbGUgcmVzcHVlc3RhIGlzIEZhbHNlOgogICAgICAgIHJlc3B1ZXN0YSA9IG51bWJlcnBvc3QoaW5wdXQocHJlZ3VudGEpKQogICAgcmV0dXJuIGludChyZXNwdWVzdGEpCgpqdWdhZG9yID0gIlBsYXllciIKbmFtZSA9IGlucHV0KGYiXG5Ob21icmUgZGVsIFt7QStqdWdhZG9yK0V9XSA9PiAiK0UpCnByaW50ICgiXG4iK211cm8pCm5hbWUgPSBuYW1lLnRpdGxlKCkKbGV2ZWwgPSBrcmFtKGYiXG5OaXZlbCBkZSBbe0MrbmFtZStFfV0gPT4gIikKcHJpbnQgKCJcbiIrbXVybykKbGV2ZWxfb25lID0gaW50KGxldmVsKSAtIDEKYW5sZWNlbCA9ICBzdHIobGV2ZWxfb25lKSArICI5IgpyZXN1bHQgPSBpbnQoYW5sZWNlbCkgKiBsZXZlbF9vbmUgLSA5MDAwMApjb2RpbmcgPSAgKGZvcm1hdChyZXN1bHQsICcsZCcpKQpmb3IgaSBpbiBjb2Rpbmc6CglpZiBpID09ICIsIjoKCQlyID0gQSsiLCIrRQoJCXdoeCA9IGNvZGluZy5yZXBsYWNlKCIsIixyKQpnbyA9ICJYUCIKcHJpbnQgKGYiXG5FbCBqdWdhZG9yIHtDK25hbWUrRX0gdGllbmUge1YrZ28rRX06IHt3aHh9XG4iKQpwcmludCAobXVybykK"
+#Rojo
+R = '\033[1;31m'
+GR = '\0;37[1;37'
+#Verde
+V = '\033[1;32m'
+GK='\033[92m'
 
-exec(base64.b64decode(script))
+#Oscuro Verde
+S = '\033[92m'
+
+#Amarillo
+A = '\033[1;33m'
+
+#Azul
+Z = '\033[0;34m'
+
+#Morado
+M = '\033[1;35m'
+
+#Celeste
+C = '\033[1;36m'
+
+#Blanco
+B = '\033[37;m'
+
+#Negro
+G = '\033[0;30'
+
+#Reiniciar
+E = '\033[0m'
+muro = M+"----------------------------------"+E
+muo = Z+"\n----------------------------------"+E
+print (muro)
+print (V)
+banner = pyfiglet.figlet_format("Fleet XP") 
+print(banner+E) 
+print (A+"Creador :", R+" PIRATE FOUNDER",C+"(Top 8)"+E)
+print (muro)
+def numberpost(valor):
+    try:
+        valor = int(valor)
+        if valor > 0:
+            return valor
+        mh = R+"No se permiten números negativos puto "+E
+        for k in mh:
+        	sys.stdout.flush()
+        	print (k,end="")
+        	time.sleep(0.1)
+        time.sleep(1)
+        return False
+    except:
+        print(muo)
+        mk = R+"\nPorque mierda pones {LETRAS} feo de mierda \n"+E
+        for k in mk:
+        	sys.stdout.flush()
+        	print (k,end="")
+        	time.sleep(0.1)
+        time.sleep(1)
+        print (muo)
+        return False
+##############################
+def kram(pregunta):
+    respuesta = False
+    while respuesta is False:
+        respuesta = numberpost(input(pregunta))
+    return int(respuesta)
+while True:
+	jugador = "Player"
+	name = input(f"\nNombre del [{A+jugador+E}] => "+E)
+	print ("\n"+muro)
+	name = name.title()
+	level = kram(f"\nNivel de [{C+name+E}] => ")
+	print ("\n"+muro)
+	level_one = int(level) - 1
+	anlecel =  str(level_one) + "9"
+	result = int(anlecel) * level_one - 90000
+	coding =  (format(result, ',d'))
+	for i in coding:
+		if i == ",":
+			r = A+","+E
+			whx = coding.replace(",",r)
+	go = "XP"
+	print (f"\nEl jugador {C+name+E} tiene {V+go+E}: {whx}\n")
+	print (muro)
+	print (muo)
+	exit = R+"exit"+E
+	print (A+f"\n- [{1}] {M}(Salir del programa)"+E)
+	print (A+f"\n- [{2}] {M}(Seguir con el programa)"+E)
+	print (muo)
+	opcion = input("opciones => ")
+	if opcion == "1":
+		sys.exit()
